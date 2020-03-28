@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import data from "./data.json";
+import data from "../data";
+import "./employee.css";
 
 class List extends Component {
   render() {
@@ -19,15 +20,15 @@ class List extends Component {
 class ListComponents extends Component {
   render() {
     return (
-      <ul>
-        <li>{this.props.name}</li>
-        <li>{this.props.title}</li>
+      <div className="ulCom">
+        <h1>{this.props.name}</h1>
+        <h2>{this.props.title}</h2>
         <SocialLinksList
           email={this.props.social.email}
           phone={this.props.social.phone}
           website={this.props.social.website}
         />
-      </ul>
+      </div>
     );
   }
 }
@@ -35,7 +36,7 @@ class ListComponents extends Component {
 class SocialLinksList extends Component {
   render() {
     return (
-      <ul>
+      <ul className="social">
         <li>{this.props.email}</li>
         <li>{this.props.phone}</li>
         <li>{this.props.website}</li>
