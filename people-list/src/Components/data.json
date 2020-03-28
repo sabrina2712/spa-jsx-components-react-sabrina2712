@@ -5,9 +5,10 @@
     "title": "DDM",
     "contacts": {
       "email": "kim@gmail.com",
-      "phone": 0,
+      "phone": "012890",
       "website": "www.kim.org"
-    }
+    },
+    "date": "23-12-2001"
   },
   {
     "image": "https://randomuser.me/api/portraits/men/2.jpg",
@@ -15,9 +16,10 @@
     "title": "DDM",
     "contacts": {
       "email": "kim@gmail.com",
-      "phone": 0,
+      "phone": "03213213",
       "website": "www.kim.org"
-    }
+    },
+    "date": "23-12-2001"
   },
   {
     "image": "https://randomuser.me/api/portraits/men/3.jpg",
@@ -25,8 +27,9 @@
     "title": "DDM",
     "contacts": {
       "email": "kim@gmail.com",
-      "phone": 0,
+      "phone": "02244",
       "website": "www.kim.org"
-    }
+    },
+    "date": "23-12-2001"
   }
 ]
