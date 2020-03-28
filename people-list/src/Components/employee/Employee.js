@@ -23,6 +23,7 @@ class ListComponents extends Component {
       <div className="ulCom">
         <h1>{this.props.name}</h1>
         <h2>{this.props.title}</h2>
+        <image href=""></image>
         <SocialLinksList
           email={this.props.social.email}
           phone={this.props.social.phone}
