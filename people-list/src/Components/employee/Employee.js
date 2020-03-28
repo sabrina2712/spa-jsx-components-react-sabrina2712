@@ -9,6 +9,7 @@ class List extends Component {
         <ListComponents
           name={item.name}
           title={item.title}
+          img={item.image}
           social={item.contacts}
         />
       );
@@ -23,7 +24,7 @@ class ListComponents extends Component {
       <div className="ulCom">
         <h1>{this.props.name}</h1>
         <h2>{this.props.title}</h2>
-        <image href=""></image>
+        <img src={this.props.img} />
         <SocialLinksList
           email={this.props.social.email}
           phone={this.props.social.phone}
