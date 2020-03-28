@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+import List from "./Components/Employee";
+
 class App extends Component {
   render() {
-    return <Components />;
+    return <List />;
   }
 }
 export default App;
