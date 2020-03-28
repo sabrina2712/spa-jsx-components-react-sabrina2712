@@ -10,12 +10,10 @@
   display: inline-block;
 }
 h1 {
-  margin: 10px;
-  padding: 10px;
+  margin: 30px;
 }
 h2 {
-  margin: 10px;
-  padding: 10px;
+  margin: 30px;
 }
 .upperBar {
   display: flex;
@@ -29,6 +27,12 @@ h2 {
 .date {
   padding: 5px;
   margin: 5px;
+}
+.tag {
+  background-color: yellow;
+}
+.name {
+  display: flex;
 }
 ul.social {
   display: flex;

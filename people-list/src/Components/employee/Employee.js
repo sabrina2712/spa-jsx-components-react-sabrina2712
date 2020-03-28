@@ -12,6 +12,7 @@ class List extends Component {
           title={item.title}
           social={item.contacts}
           date={item.date}
+          tag={item.tag}
         />
       );
     });
@@ -26,7 +27,10 @@ class ListComponents extends Component {
         <div className="upperBar">
           <img src={this.props.img} className="img" />
           <div className="sidebar">
-            <h1>{this.props.name}</h1>
+            <div className="name">
+              <h1>{this.props.name}</h1>
+              <h4>{this.props.tag ? <Admin tag={this.props.tag} /> : null}</h4>
+            </div>
             <h2>{this.props.title}</h2>
           </div>
         </div>
@@ -47,7 +51,7 @@ class SocialLinksList extends Component {
   render() {
     return (
       <ul className="social">
-        <li>Emaii: {this.props.email}</li>
+        <li>Email: {this.props.email}</li>
         <li> Phone: {this.props.phone}</li>
         <li>Website:{this.props.website}</li>
       </ul>
@@ -58,6 +62,12 @@ class SocialLinksList extends Component {
 class MemberPeriod extends Component {
   render() {
     return <div className="date">Member since: {this.props.date}</div>;
+  }
+}
+
+class Admin extends Component {
+  render() {
+    return <h4 className="tag">{this.props.tag}</h4>;
   }
 }
 
